@@ -1,0 +1,35 @@
+{
+  "name": "gesture-jam",
+  "version": "1.0.0",
+  "description": "Gesture-controlled music jam session using Electron + React + TensorFlow.js + Tone.js",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "electron": "electron .",
+    "start": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "build": "vite build"
+  },
+  "keywords": ["electron", "react", "tensorflow", "tone", "gesture", "music"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^25.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tone": "^14.7.77",
+    "@tensorflow-models/hand-pose-detection": "^2.0.0",
+    "@tensorflow-models/face-landmarks-detection": "^1.0.2",
+    "@tensorflow/tfjs-core": "^4.10.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.10.0",
+    "@tensorflow/tfjs": "^4.10.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "concurrently": "^8.2.0",
+    "wait-on": "^7.0.1"
+  }
+}
